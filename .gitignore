@@ -1,0 +1,16 @@
+node_modules
+data/WHD*
+data/*
+data/!.gitkeep
+doc
+.cache
+.DS_Store
+.rdoc-dist
+
+*.bak
+*.tem
+*.log
+*.temp
+#.swp
+*.*~
+~*.*

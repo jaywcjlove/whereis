@@ -1,0 +1,25 @@
+{
+  "name": "@wcjiang/whereis",
+  "version": "1.0.0",
+  "description": "Simply get the first path to a bin on any system.",
+  "homepage": "https://github.com/jaywcjlove/whereis.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaywcjlove/whereis.git"
+  },
+  "keywords": [
+    "whereis",
+    "which",
+    "bin",
+    "path"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "author": "kenny wong <wowohoo@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tap": "^12.0.1"
+  }
+}
