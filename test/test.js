@@ -10,7 +10,7 @@ test("undefined", async (t) => {
   try {
     await whereis();
   } catch (error) {
-    t.equal(error, 'No command name is passed', 'undefined was found');
+    t.equal(error, 'No command name is passed!', 'undefined was found');
     t.equal(error.message, undefined, 'undefined was found');
   }
 });
@@ -19,7 +19,7 @@ test("Empty", async (t) => {
   try {
     await whereis('');
   } catch (error) {
-    t.equal(error, 'No command name is passed', 'Empty was found');
+    t.equal(error, 'No command name is passed!', 'Empty was found');
     t.equal(error.message, undefined, 'Empty was found');
   }
 });
