@@ -2,6 +2,9 @@ const { exec } = require('child_process');
 
 module.exports = function whereis(command, options) {
   return new Promise((resolve, reject) => {
+    if (!command) {
+      return reject('No command name is passed!');
+    }
     const commandStr = /(win32)/.test(process.platform) ? `for %i in (${command}.exe) do @echo. %~$PATH:i` : `which ${command}`;
     exec(commandStr, options, (error, stdout, stderr) => {
       if (error) {
