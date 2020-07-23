@@ -1,8 +1,10 @@
 node_modules
+coverage
 data/WHD*
 data/*
 data/!.gitkeep
 doc
+.nyc_output
 .cache
 .DS_Store
 .rdoc-dist
