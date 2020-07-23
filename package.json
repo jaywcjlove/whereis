@@ -15,11 +15,12 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tap test/*.js",
+    "coverage": "tap test/*.js --coverage-report=lcov"
   },
   "author": "kenny wong <wowohoo@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "tap": "12.7.0"
+    "tap": "14.10.8"
   }
 }
