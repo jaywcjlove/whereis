@@ -21,6 +21,6 @@
   "author": "kenny wong <wowohoo@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "tap": "14.10.8"
+    "tap": "15.0.10"
   }
 }
