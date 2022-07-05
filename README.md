@@ -3,7 +3,7 @@ whereis
 
 [![CI](https://github.com/jaywcjlove/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/github-actions/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@wcjiang/whereis.svg)](https://www.npmjs.com/package/@wcjiang/whereis)
-[![Coverage Status](https://jaywcjlove.github.io/whereis/coverage/badges.svg)](https://jaywcjlove.github.io/whereis/coverage/lcov-report/)
+[![Coverage Status](https://jaywcjlove.github.io/whereis/badges.svg)](https://jaywcjlove.github.io/whereis/coverage/lcov-report/)
 
 Like the unix `which` utility.
 
