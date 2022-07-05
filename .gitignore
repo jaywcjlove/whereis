@@ -4,6 +4,8 @@ data/WHD*
 data/*
 data/!.gitkeep
 doc
+package-lock.json
+
 .nyc_output
 .cache
 .DS_Store
