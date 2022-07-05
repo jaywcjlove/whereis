@@ -1,25 +1,24 @@
-const test = require('tap').test;
 const whereis = require('../');
 
-test("when which found our program", async (t) => {
+test('when which found our program', async () => {
   let where = await whereis('ls');
-  t.equal(where, '/bin/ls', 'ls was found');
+  expect(where).toBe('/bin/ls')
 });
 
-test("undefined", async (t) => {
+test('undefined', async () => {
   try {
     await whereis();
   } catch (error) {
-    t.equal(error, 'No command name is passed!', 'undefined was found');
-    t.equal(error.message, undefined, 'undefined was found');
+    expect(error).toBe('No command name is passed!')
+    expect(error.message).toBe(undefined)
   }
 });
 
-test("Empty", async (t) => {
+test('Empty', async () => {
   try {
     await whereis('');
   } catch (error) {
-    t.equal(error, 'No command name is passed!', 'Empty was found');
-    t.equal(error.message, undefined, 'Empty was found');
+    expect(error).toBe('No command name is passed!')
+    expect(error.message).toBe(undefined)
   }
 });
