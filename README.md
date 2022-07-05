@@ -1,5 +1,7 @@
 whereis
----
+===
+
+[![ci](https://github.com/jaywcjlove/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/github-actions/actions/workflows/ci.yml)
 
 Like the unix `which` utility.
 
@@ -22,3 +24,17 @@ const whereis = require('@wcjiang/whereis');
   // => /bin/ls
 })();
 ```
+
+## Contributors
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/jaywcjlove/whereis/graphs/contributors">
+  <img src="https://jaywcjlove.github.io/whereis/CONTRIBUTORS.svg" />
+</a>
+
+Made with [action-contributors](https://github.com/jaywcjlove/github-action-contributors).
+
+## License
+
+Licensed under the MIT License.

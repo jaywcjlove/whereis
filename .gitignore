@@ -3,6 +3,7 @@ coverage
 data/WHD*
 data/*
 data/!.gitkeep
+dist
 doc
 package-lock.json
 
