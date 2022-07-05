@@ -14,8 +14,18 @@ jobs:
         node-version: 16
 
     - run: npm install
+    - run: npm run build
     - run: npm run test
     - run: npm run coverage
+
+    - run: cp -rp coverage dist
+
+    - name: Create Coverage Badges
+      uses: jaywcjlove/coverage-badges-cli@main
+      with:
+        style: flat
+        source: coverage/coverage-summary.json
+        output: dist/badges.svg
 
     - name: Generate Contributors Images
       uses: jaywcjlove/github-action-contributors@main
