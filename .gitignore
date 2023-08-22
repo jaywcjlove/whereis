@@ -11,6 +11,7 @@ package-lock.json
 .cache
 .DS_Store
 .rdoc-dist
+*.tsbuildinfo
 
 *.bak
 *.tem

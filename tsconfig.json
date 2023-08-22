@@ -1,0 +1,11 @@
+{
+  "include": ["*.js"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "strict": true,
+    "declaration": true,
+    "checkJs": true,
+    "emitDeclarationOnly": true
+  }
+}
