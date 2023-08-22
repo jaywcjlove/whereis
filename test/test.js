@@ -2,7 +2,7 @@ const whereis = require('../');
 
 test('when which found our program', async () => {
   let where = await whereis('ls');
-  expect(where).toBe('/bin/ls')
+  expect(where).toBe('/usr/bin/ls')
 });
 
 test('undefined', async () => {
