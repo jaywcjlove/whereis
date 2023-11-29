@@ -1,6 +1,7 @@
 whereis
 ===
 
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor)
 [![CI](https://github.com/jaywcjlove/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/github-actions/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@wcjiang/whereis.svg)](https://www.npmjs.com/package/@wcjiang/whereis)
 [![Coverage Status](https://jaywcjlove.github.io/whereis/badges.svg)](https://jaywcjlove.github.io/whereis/coverage/lcov-report/)

@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Simply get the first path to a bin on any system.",
   "homepage": "https://github.com/jaywcjlove/whereis.git",
+  "funding": "https://jaywcjlove.github.io/#/sponsor",
   "repository": {
     "type": "git",
     "url": "https://github.com/jaywcjlove/whereis.git"
