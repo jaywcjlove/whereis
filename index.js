@@ -1,4 +1,4 @@
-const { exec } = require('child_process');
+const { execFile } = require('child_process');
 
 /**
  * @typedef {Object} Options
@@ -12,12 +12,12 @@ const { exec } = require('child_process');
 function whereis(command, options) {
   return new Promise((resolve, reject) => {
     if (!command) {
-      return reject('No command name is passed!');
+      return reject(new Error('No command name is passed!'));
     }
-    const commandStr = /(win32)/.test(process.platform) ? `for %i in (${command}.exe) do @echo. %~$PATH:i` : `which ${command}`;
-    exec(commandStr, options, (error, stdout, stderr) => {
+    const commandStr = /(win32)/.test(process.platform) ? `${command}.exe` : command;
+    execFile('which', [commandStr], options, (error, stdout, stderr) => {
       if (error) {
-        reject(`Could not find ${command} on your system; ${error.message ? error.message : ''}`);
+        reject(new Error(`Could not find ${command} on your system; ${error.message ? error.message : ''}`));
         return;
       }
       const str = stdout.toString().split('\n')[0];

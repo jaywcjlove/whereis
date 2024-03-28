@@ -9,8 +9,7 @@ test('undefined', async () => {
   try {
     await whereis();
   } catch (error) {
-    expect(error).toBe('No command name is passed!')
-    expect(error.message).toBe(undefined)
+    expect(error.message).toBe("No command name is passed!")
   }
 });
 
@@ -18,7 +17,14 @@ test('Empty', async () => {
   try {
     await whereis('');
   } catch (error) {
-    expect(error).toBe('No command name is passed!')
-    expect(error.message).toBe(undefined)
+    expect(error.message).toBe('No command name is passed!')
+  }
+});
+
+test('Empty', async () => {
+  try {
+    await whereis('wwwwww');
+  } catch (error) {
+    expect(error.message).toBe('Could not find wwwwww on your system; Command failed: which wwwwww\n')
   }
 });
